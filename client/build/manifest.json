@@ -1,0 +1,9 @@
+{
+    "short_name": "Fix It 5",
+    "name": "Fix It 5 Handyman",
+    "icons": [],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
