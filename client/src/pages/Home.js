@@ -4,7 +4,7 @@ import Jumbotron from "../components/Jumbotron/Jumbotron";
 import Row from "../components/Row";
 import Col from "../components/Col";
 // import {Input, SubmitBtn} from "../components/Search/Search";
-import API from "../utils/API";
+// import API from "../utils/API";
 // import ResultList from "../components/ResultList/ResultList";
 
 class Home extends Component {
