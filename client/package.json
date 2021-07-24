@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "Fix IT 5 Handyman",
   "private": true,
-  "proxy": "http://localhost:3001/",
   "dependencies": {
     "@material-ui/core": "^4.12.2",
     "axios": "^0.19.2",
