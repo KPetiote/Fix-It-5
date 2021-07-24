@@ -9,52 +9,6 @@ import API from "../utils/API";
 
 class Home extends Component {
 
-    state = {
-        books: [],
-        search: ""
-    };
-
-    // Search function for books through Google API
-    searchBooks = () => {
-        API.googleBooks(this.state.search)
-            .then(res => {
-                console.log("This is res.data", res.data.items)
-                this.setState({
-                books: res.data.items,
-                search: ""
-            })})
-            .catch(err => console.log(err));
-            
-    };
-
-    // Function to handle input data
-    handleInputChange = event => {
-        const {name, value} = event.target;
-        this.setState({
-            [name]: value
-        });
-    };
-
-    // Function to handle form data submission
-    handleFormSubmit = event => {
-        event.preventDefault();
-        this.searchBooks();
-    };
-
-    saveGoogleBook = currentBook => {
-        console.log("This is the current book", currentBook);
-        API.saveBook({
-            id: currentBook.id,
-            title: currentBook.title,
-            authors: currentBook.authors,
-            description: currentBook.description,
-            image: currentBook.image,
-            link: currentBook.link
-        })
-        .then(res => console.log("Successfully POSTED to DB!", res))
-        .catch(err => console.log("this is the error", err));
-    }
-
     render() {
         return (
             <div>
